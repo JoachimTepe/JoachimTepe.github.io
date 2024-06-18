@@ -59,7 +59,7 @@ header .dropdown-content {
     position: absolute;
     top: 100%;
     background-color: #fff;
-    min-width: 160px;
+    min-width: 120px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Let skygge for at adskille dropdown */
     border-radius: 8px; 
     overflow: hidden; 
@@ -67,7 +67,7 @@ header .dropdown-content {
     transition: transform 0.3s ease, opacity 0.3s ease; /* Glat overgang for visning */
     transform: translateY(10px); /* Flyt dropdown lidt ned */
     opacity: 0; /* Gør dropdown usynlig som standard */
-    pointer-events: none; /* Deaktiver klik som standard */
+    pointer-events: none; 
 }
 header .dropdown-content li a {
     padding: 12px 16px;
@@ -359,8 +359,9 @@ max-width: 500px;
         .section1 h3 {
             text-align: left;
             margin-bottom: 20px;
-            margin-left: 2%;
-            color: #8c9803;
+            margin-left: 11%;
+            font-size: 24px;
+            color: #464c03;
         }
         
         .section-content1 {
@@ -370,7 +371,6 @@ max-width: 500px;
         }
         
         .section-content1 div {
-            background-color: white;
             border-radius: 8px;
             padding: 20px;
             margin-left: 30%;
@@ -450,25 +450,35 @@ max-width: 500px;
         padding: 10px;
     }
     
+
     .text-section1 h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
+        font-size: 28px; /* Øget skriftstørrelse for overskrifter */
+        font-weight: bold; /* Fed skriftstil for tydelighed */
+        color: #333; /* Mørkere tekstfarve for bedre kontrast */
+        margin-bottom: 15px; /* Lidt større afstand under overskrifter */
+        text-transform: uppercase; /* Store bogstaver for en mere markant stil */
+        text-align: left; /* Venstrejuster overskrifter */
+    }
+    
+    .text-section1 p {
+        font-size: 16px; /* Basis skriftstørrelse for brødtekst */
+        line-height: 1.6; /* Øget linjeafstand for bedre læsbarhed */
+        color: #666; /* Lidt mørkere tekstfarve end overskrifterne */
+        margin-bottom: 15px; /* Standard afstand mellem afsnit */
     }
 
 /* Lanceringsevent*/
 
-.event-details ul {
+.textbox ul {
     list-style: none;
     padding: 0;
+    text-decoration: none;
 }
 
-.event-details ul li {
-    margin-bottom: 10px;
-}
     
 
 
-    /*Tilpas til telefone*/
+    /*Tilpas til telefon*/
 
 @media (max-width: 768px) {
     section {
@@ -485,7 +495,7 @@ max-width: 500px;
     }
 
     header nav, header ul {
-        display: none;
+        display: none; /*Fjerner nav-baren når man er på telefonen*/
     }
 
     .content .textbox h2 {
